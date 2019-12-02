@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/index.css" type="text/css">
+    <title>Guestbook</title>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="jumbotron">
+                <h1 class="display-4">Guestbook</h1>
+            </div>
+        </header>
+        <h5 class="text-center"><a href="php/admin.php">Go To Admin Page</a></h5>
+        <form id="guestForm" action="php/thankYou.php" method="post">
+            <!--action="thankYou.php"-->
+            <fieldset class="form-group">
+                <legend>Personal Info</legend>
+
+                <div class="form-group">
+                    <label id="firstD" for="firstName">First Name</label>
+                    <input type="text" class="form-control " id="firstName" name="firstName" placeholder="Enter First Name">
+                </div>
+
+                <div class="form-group lastD">
+                    <label id="lastD" for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter Last Name">
+                </div>
+
+                <div class="form-group">
+                    <label  for="company">Company</label>
+                    <input type="text" class="form-control" id="company" name="company" placeholder="Enter Your Company">
+                </div>
+
+                <div class="form-group">
+                    <label for="jobTittle">Job Tittle</label>
+                    <input type="text" class="form-control" id="jobTittle" name="jobTittle" placeholder="Enter Your Job Tittle">
+                </div>
+
+                <div class="form-group">
+                    <label id="linkedD" for="linked">LinkedIn URL</label>
+                    <input type="text" class="form-control" id="linked" name="linked" placeholder="Enter Your LinkedIn URL">
+                </div>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <legend>General Info</legend>
+
+                <label id="metLable" for="meetType">How did we Meet</label>
+                <div class="form-group">
+                    <select class="form-control" id="meetType" name="meetType">
+                        <option value="none">Select a Option</option>
+                        <option value="meetup">Meetup</option>
+                        <option value="job-fair">Job Fair</option>
+                        <option value="other">Other</option>
+                        <option value="never-met">Never Met</option>
+                    </select>
+                </div>
+
+                <div id="other-group" class="hidden form-group">
+                    <label id="otherLabel" for="other">Other</label>
+                    <textarea class="form-control" id="other" name="other" rows="3" placeholder="Please Specify"></textarea>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <textarea class="form-control" id="comment" name="comment" rows="4" placeholder="Enter Your Comment Here"></textarea>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="addToMail" id="agree" name="agree">
+                <label class="form-check-label" for="agree">
+                    Please add me to your mailing list
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label id="mailD" class="mt-2" for="mail">E-mail</label>
+                <input type="text" class="form-control" id="mail" name="mail" placeholder="Enter Your E-mail">
+            </div>
+
+
+                <label id="format" class="hidden">Choose a E-mail Format
+                <div class="form-group row " >
+                    <div class="form-check">
+                        <input class="form-check-input col-6" type="radio" name="method" id="html" value="html" >
+                        <label class="form-check-label col-6" for="html">
+                            HTML
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input col-6" type="radio" name="method" id="text" value="text">
+                        <label class="form-check-label col-6" for="text">
+                            Text
+                        </label>
+                    </div>
+                </div>
+                </label>
+
+            <button id="submit" type="submit" class="btn btn-primary ">
+                Submit
+            </button>
+        </form>
+    </div>
+    <!-- jQuery first, then Popper.js, Bootstrap JS then personal validation script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="scripts/Validation.js"></script>
+</body>
+</html>

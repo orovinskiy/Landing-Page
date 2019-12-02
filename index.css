@@ -1,0 +1,70 @@
+
+
+#head {
+    text-align: center;
+    font-size: 47px;
+}
+
+#below-head ul li {
+   margin-left: 4%;
+   display: inline;
+   font-size: 17px;
+ }
+
+#below-head ul li a:hover {
+  cursor:pointer;
+  background-color: lightgray;
+}
+
+#below-head{
+  padding-bottom: 3%
+}
+
+
+body{
+  font-family: Verdana, sans-serif;
+  background-color: rgb(211, 240, 242);
+  padding-right: 5rem;
+  padding-left: 1.5rem;
+}
+
+aside{
+  position: absolute;
+  border: 2px solid black;
+  padding-right: 2%;
+  top: 160px;
+  border-radius: 5%;
+  box-shadow: 2px 3px 4px gray;
+}
+
+.aside-head{
+  padding-left: 32%;
+}
+
+#main{
+  position: relative;
+  float: right;
+  padding-left: 16rem;
+  padding-right: 22%;
+}
+
+#education{
+  position: relative;
+  top: 20px;
+}
+
+#skills{
+  padding-left: 80%;
+}
+
+img{
+    display:block;
+    position: relative;
+    bottom: 220px;
+    border-radius: 5%;
+}
+
+
+@media screen and (min-width: 400px) {
+  
+}
